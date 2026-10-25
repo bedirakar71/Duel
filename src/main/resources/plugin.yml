@@ -1,0 +1,20 @@
+name: CustomDuel
+version: 1.0.0
+main: com.zornoely.duel.CustomDuel
+api-version: 1.21
+softdepend: [Citizens]
+
+commands:
+  duel:
+    description: Düello komutları
+    usage: /duel <davet|kabul|berabere|sandik|sira>
+  arena:
+    description: Arena yönetim komutları
+    usage: /arena <create|delete|setspawn1|setspawn2|settype|list>
+    permission: customduel.admin
+
+permissions:
+  customduel.admin:
+    description: Arena yönetim yetkisi
+    default: op
+    
